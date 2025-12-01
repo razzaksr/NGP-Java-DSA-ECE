@@ -1,0 +1,7 @@
+https://github.com/razzaksr/NGP-Java-DSA-ECE
+
+Soring algorithms:
+Insertion
+Merge
+Selection
+Quick
