@@ -1,7 +1,12 @@
 https://github.com/razzaksr/NGP-Java-DSA-ECE
 
-Soring algorithms:
+Sorting algorithms:
 Insertion
 Merge
 Selection
 Quick
+
+Searching algorithms:
+Linear 
+Ternary
+Binary
