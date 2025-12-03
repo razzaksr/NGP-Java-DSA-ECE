@@ -10,3 +10,31 @@ Searching algorithms:
 Linear 
 Ternary
 Binary
+
+
+
+
+Assessment:
+1. Write a method to calculate delivery charges based on distance. Overload it for weight-based charges too
+
+2. Write a method to calculate monthly emi based on principleAmount, roi for 3 years. Overload it for Collateral to reduce roi
+
+3. Write a program to find second maximum in unsorted array of product prices.
+
+4. Write a program to find and print account balances those are not maintaining minimum balance threshold from unsorted array of customer balances
+
+
+5. Banking:
+Account (abstract class) contains accountNumber, accountBalance with subclasses SavingsAccount and CurrentAccount.
+Interface Transaction with deposit() and withdraw().
+Savings Account:
+withdraw >> no charges upto 50000, 3% for more than 50000
+CurrentAccount:
+withdraw>> charges for each 10000 of 2.5%
+
+
+Discussed Setter and Getter
+
+
+
+
