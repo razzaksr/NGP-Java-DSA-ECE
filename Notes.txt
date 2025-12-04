@@ -36,5 +36,32 @@ withdraw>> charges for each 10000 of 2.5%
 Discussed Setter and Getter
 
 
+Storage Structures: Linear
+	Array
+	Stack >> LIFO
+		push, pop, peek, isEmpty, viewAll
+	Implementation:
+		In built: java.util.Stack
+		Manual Implementation:
+			1. fixed memory using array
+			2. dynamic memory using object oriented/ linkedlist
+
+Collection Framework
+Iterable>> Collection>> AbstractCollection>> AbstractClass>> Vector>> Stack
+
+Validate Expression with Brackets, Parenthesis
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
