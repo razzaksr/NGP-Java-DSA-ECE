@@ -47,17 +47,48 @@ Storage Structures: Linear
 			2. dynamic memory using object oriented/ linkedlist
 
 Collection Framework
-Iterable>> Collection>> AbstractCollection>> AbstractClass>> Vector>> Stack
+Iterable>> Collection>> AbstractCollection>> Vector>> Stack
 
 Validate Expression with Brackets, Parenthesis
 
 
+Largest rectangle are in histogram
+
+1, 3, 5,4,2              max=Integer.MIN_VALUE
+0  1  2 3 4
+
+index=0, arr[index] = 1>> current
+push 0
+Stack>> for index          
+0 
+
+
+Daily Temperature 
+Given an array of integers temperatures represents the daily temperatures, return an array answer such that answer[i] is the number of days you have to wait after the ith day to get a warmer temperature. If there is no future day for which this is possible, keep answer[i] == 0 instead.
+Example 1:
+Input: temperatures = [73,74,75,71,69,72,76,73]
+Output: [1,1,4,2,1,1,0,0]
+Example 2:
+Input: temperatures = [30,40,50,60]
+Output: [1,1,1,0]
 
 
 
+Queue >> FiFo
+	enqueue, dequeue, isEmpty, front, rear
+	
+	Implementation:
+	1. fixed memory via stack
+	2. inbuilt class>> Queue>> java.util
+	3. LinkedList/ Object oriented
 
 
-
+	Queue>>
+		offer(enqueue), poll(dequeue), empty
+		PriorityQueue>> Deque
+			remove small element always
+			if we wish removal in different way we can configure
+		
 
 
 
