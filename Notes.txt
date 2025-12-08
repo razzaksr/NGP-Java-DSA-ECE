@@ -92,7 +92,118 @@ Queue >> FiFo
 
 
 
+Collection framework: 
+to overcome array drawbacks
+	List>> ArrayList, LinkedList
+
+LinkedList >> 
+	add / addLast, addaddFirst, add(pos,object)
+
+	get(pos), getFirst, getLast
+
+	remove / removeFirst, removeLast, remove(position)
+
+ArrayList:
+	add, add(pos,obj), addAll
+	set(pos,obj)
+	contains(obj)// true/false
+	remove(obj)
+	get(pos)
 
 
 
 
+
+---
+
+
+
+
+
+
+Command Prompt:
+java   -version
+
+
+
+environment path settings:
+
+vs code java extension:
+EXTENSION PACK FOR JAVA
+
+
+FD Calculator:
+oneYear  = pA * roi/100 >> single year interest
+
+oneYear * duration
+
+
+Versions of solution:
+without OOP
+encapsulation
+polymorphsim
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  1. Fixed Deposit (FD)
+ 
+Maturity = Principal * (1 + (Rate / CompoundingFrequency)) ^ (CompoundingFrequency * TimeInYears)
+ 
+
+- Principal = initial deposit  
+- Rate = annual interest rate (decimal, e.g. 0.07 for 7%)  
+- CompoundingFrequency = number of times interest is compounded per year (quarterly = 4, yearly = 1, monthly = 12)  
+- TimeInYears = total duration in years  
+
+---
+
+  2. Recurring Deposit (RD)
+ 
+Maturity = Installment * (( (1 + (Rate / CompoundingFrequency)) ^ (CompoundingFrequency * TimeInYears) - 1 ) / (1 - (1 + (Rate / CompoundingFrequency)) ^ (-CompoundingFrequency / 12)))
+ 
+
+- Installment = monthly deposit  
+- Rate = annual interest rate (decimal)  
+- CompoundingFrequency = usually 4 (quarterly)  
+- TimeInYears = total duration in years  
+
+---
+
+  3. Systematic Investment Plan (SIP)
+ 
+Maturity = Installment * ( ((1 + MonthlyRate) ^ TotalMonths - 1) / MonthlyRate ) * (1 + MonthlyRate)
+ 
+
+- Installment = monthly investment  
+- MonthlyRate = annual rate / 12 (decimal)  
+- TotalMonths = number of months  
+
+---
+
+4. Systematic Withdrawal Plan (SWP)
+
+InitialInvestment = Withdrawal * ( (1 - (1 + MonthlyRate) ^ (-TotalMonths)) / MonthlyRate )
+
+
+- Withdrawal = fixed withdrawal per month  
+- MonthlyRate = annual rate / 12 (decimal)  
+- TotalMonths = number of months  
