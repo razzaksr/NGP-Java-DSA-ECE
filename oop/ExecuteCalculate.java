@@ -18,6 +18,7 @@ public class ExecuteCalculate {
         scan.close();
     }
 }
+// encapsulated/ model/ bean/ entity/ business class
 class Finanace{
     // data members
     private int principleAmount, duration;
