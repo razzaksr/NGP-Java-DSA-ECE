@@ -150,6 +150,26 @@ overriding
 upcast, downcast
 
 
+Abstraction:
+	Interface
+	Abstract class
+	Overriding
+	
+User defined Class as generic to Collections
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
