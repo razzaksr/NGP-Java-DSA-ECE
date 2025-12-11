@@ -158,7 +158,14 @@ Abstraction:
 User defined Class as generic to Collections
 
 
+Comparator interface>>
+	compare>> override
 
+Queue with problem solving:
+	rotation
+	palindrome
+
+	
 
 
 
