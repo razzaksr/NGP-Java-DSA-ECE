@@ -158,14 +158,37 @@ Abstraction:
 User defined Class as generic to Collections
 
 
-Comparator interface>>
-	compare>> override
+Comparator interface>> 
+bean class and interface implementation can be separate
+	compare(Object o1,Object o2)>> override
 
 Queue with problem solving:
 	rotation
 	palindrome
 
-	
+
+Comparable interface>> 
+implementation has to be done in bean class itself
+	compareTo(Object o) >> override
+
+
+Set : 
+	LinkedHashSet, HashSet, TreeSet
+	TreeSet with User Defined Type
+	Comparable implementation
+
+
+Map: <K, V>:
+Key Objects Should not be duplicated, Value Objects can be
+insert>> put(k,v), putAll
+read>> get(K)
+check>>containsKey(K) , containsValue(V)
+read only keys>> keySet()>> convert K Objects into new Set
+read only values> values() >> convert V Objects into Collection
+delete >> remove(K)
+
+	HashMap/ Hashtable
+	TreeMap
 
 
 
