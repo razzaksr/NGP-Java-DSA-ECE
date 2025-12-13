@@ -61,9 +61,8 @@ public class KanbanBoard {
         do{
             System.out.println("1. Todo\n2.Progress\n3.REview\n4.Done\nAny to exit");
             int choice = scanner.nextInt();
-            if(choice>4||choice<1)
-                return;
-            System.out.println("Entre the name of module ");
+            if(choice>4||choice<1) return;
+            System.out.println("Enter the name of task ");
             String task = scanner.next();
             if(choice==1) 
                 kanban.update("todo",task);
