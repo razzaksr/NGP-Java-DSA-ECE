@@ -191,7 +191,9 @@ delete >> remove(K)
 	TreeMap
 
 
-
+1. Count Occurrences of String
+2. Find Distinct digits
+3. Agile Kanban Board implemented via Map
 
 
 
