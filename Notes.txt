@@ -283,21 +283,6 @@ Rearrange a delivery queue where zeros indicate unavailable trucks; push them to
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 Rotate Image
 You are given an n x n 2D matrix representing an image, rotate the image by 90 degrees (clockwise).
 You have to rotate the image in-place, which means you have to modify the input 2D matrix directly. DO NOT allocate another 2D matrix and do the rotation.
@@ -316,6 +301,77 @@ Output: [[15,13,2,5],[14,3,4,1],[12,6,8,9],[16,7,10,11]]
 
 
 
+
+
+
+
+
+Rotating clock wise and anti clock wise
+example:
+arr = [DBMS, OS, DSA, Network, AI]
+n = 2
+Clock Wise: 
+[Network, AI, DBMS, OS, DSA]
+Anti Clock Wise: 
+[DSA, Network, AI, DBMS, OS]
+
+
+Find Pivot Index
+Problem Statement:
+Determine the index at which the workload to its left equals the workload to its right.
+	Sample Input:
+	nums = [1, 7, 3, 6, 5, 6]
+	Expected Output:	3
+	Explanation: 1 + 7 + 3 = 11, 5 + 6 = 11.
+	Input:
+	-7, 1, 5, 2, -4, 3, 0
+	Output:	3
+	Input:
+	0,-3,5,-4,-2,3,1,0
+	Output:	0
+
+
+Group Anagrams
+		Problem Statement:
+		Cluster search queries or user aliases that are scrambled versions of each other — useful in NLP or 		search optimization.
+		Sample Input:
+		strs = ["eat","tea","tan","ate","nat","bat"]
+		Expected Output:
+		[["eat","tea","ate"], ["tan","nat"], ["bat"]]
+
+
+
+Minimum Moves to Convert String
+You are given a string s consisting of n characters which are either 'X' or 'O'.
+A move is defined as selecting three consecutive characters of s and converting them to 'O'. Note that if a move is applied to the character 'O', it will stay the same.
+Return the minimum number of moves required so that all the characters of s are converted to 'O'.
+		Example 1:
+		Input: s = "XXX"
+		Output: 1	
+		Explanation: XXX -> OOO
+		We select all the 3 characters and convert them in one move.
+		Example 2:
+		Input: s = "XXOX"
+		Output: 2
+		Explanation: XXOX -> OOOX -> OOOO
+We select the first 3 characters in the first move, and convert them to 'O'.
+Then we select the last 3 characters and convert them so that the final string contains all 'O's.
+		Example 3:
+		Input: s = "OOOO"
+		Output: 0
+Explanation: There are no 'X's in s to convert.
+
+
+
+		Validating IPV4
+		Input: s = "222.111.111.111"
+		Output: true
+		Explanation: Here, the IPv4 address is as per the criteria mentioned and also 		all four decimal numbers lies in the mentioned range.
+		Input: s = "5555..555"
+		Output: false
+		Explanation: "5555..555" is not a valid. IPv4 address, as the middle two 			portions are missing.
+		Input: s = "0.0.0.0255"
+		Output: false
 
 
 
