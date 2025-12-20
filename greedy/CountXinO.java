@@ -1,4 +1,4 @@
-package arrays;
+package greedy;
 
 public class CountXinO {
     public static void convert(String str){
