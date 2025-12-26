@@ -473,9 +473,32 @@ Example 3:
 Input: nums = [3,2,1,0,4],                  
 Output: -1
 
+Divide and Conquer
+1. Sum of array
+	a. 0 based split via new array using copyOfRange
+	b. 0 based split via current and current+1 
 
+2. find max in array using divide and conquer
+input: arr = [34,12,67,32,11]
+Output: 67
+input: arr = [120,97,35,122]
+Output: 122
+	a. 0 based split
+	b. mid based split
 
-
+3. Climbing Stairs
+Input: 3
+Output: 3
+Input: 5
+Output: 8
+Input: 4
+Output: 5
+Input: -2
+Output: 0
+Input: 1
+Output: 1
+Input: 2
+Output: 2
 
 
 
