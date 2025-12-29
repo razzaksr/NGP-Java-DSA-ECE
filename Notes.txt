@@ -13,6 +13,74 @@ Binary
 
 
 
+generics>> CRUD, 
+Array problems in loop
+Array problems in recursion
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  1. Fixed Deposit (FD)
+ 
+Maturity = Principal * (1 + (Rate / CompoundingFrequency)) ^ (CompoundingFrequency * TimeInYears)
+ 
+
+- Principal = initial deposit  
+- Rate = annual interest rate (decimal, e.g. 0.07 for 7%)  
+- CompoundingFrequency = number of times interest is compounded per year (quarterly = 4, yearly = 1, monthly = 12)  
+- TimeInYears = total duration in years  
+
+---
+
+  2. Recurring Deposit (RD)
+ 
+Maturity = Installment * (( (1 + (Rate / CompoundingFrequency)) ^ (CompoundingFrequency * TimeInYears) - 1 ) / (1 - (1 + (Rate / CompoundingFrequency)) ^ (-CompoundingFrequency / 12)))
+ 
+
+- Installment = monthly deposit  
+- Rate = annual interest rate (decimal)  
+- CompoundingFrequency = usually 4 (quarterly)  
+- TimeInYears = total duration in years  
+
+---
+
+  3. Systematic Investment Plan (SIP)
+ 
+Maturity = Installment * ( ((1 + MonthlyRate) ^ TotalMonths - 1) / MonthlyRate ) * (1 + MonthlyRate)
+ 
+
+- Installment = monthly investment  
+- MonthlyRate = annual rate / 12 (decimal)  
+- TotalMonths = number of months  
+
+---
+
+4. Systematic Withdrawal Plan (SWP)
+
+InitialInvestment = Withdrawal * ( (1 - (1 + MonthlyRate) ^ (-TotalMonths)) / MonthlyRate )
+
+
+- Withdrawal = fixed withdrawal per month  
+- MonthlyRate = annual rate / 12 (decimal)  
+- TotalMonths = number of months  
+
+
+
 
 Assessment:
 1. Write a method to calculate delivery charges based on distance. Overload it for weight-based charges too
@@ -573,127 +641,69 @@ Constraints:
 
 
 
+Special Array With X Elements Greater Than or Equal X
+You are given an array nums of non-negative integers. nums is considered special if there exists a number x such that there are exactly x numbers in nums that are greater than or equal to x.
+Notice that x does not have to be an element in nums.
+Return x if the array is special, otherwise, return -1. It can be proven that if nums is special, the value for x is unique.
 
-
-
-Arranging Coins
-You have n coins and you want to build a staircase with these coins. The staircase consists of k rows where the ith row has exactly i coins. The last row of the staircase may be incomplete.
-Given the integer n, return the number of complete rows of the staircase you will build.
+note: if x is 2 then numbers in array greater than or equals to 2's matching count should be  exactly 2, not more / less than that
 
 Example 1:
-Input: n = 5
-$
-$$
-$$_
+Input: nums = [3,5]
 Output: 2
-Explanation: Because the 3rd row is incomplete, we return 2.
+Explanation: There are 2 values (3 and 5) that are greater than or equal to 2.
 Example 2:
-Input: n = 8
-$
-$$
-$$$
-$$_ _
+Input: nums = [0,0]
+Output: -1
+Explanation: No numbers fit the criteria for x.
+If x = 0, there should be 0 numbers >= x, but there are 2.
+If x = 1, there should be 1 number >= x, but there are 0.
+If x = 2, there should be 2 numbers >= x, but there are 0.
+x cannot be greater since there are only 2 numbers in nums.
+Example 3:
+Input: nums = [0,4,3,0,4]
 Output: 3
-Explanation: Because the 4th row is incomplete, we return 3.
+Explanation: There are 3 values that are greater than or equal to 3.
+Example 4:
+Input: nums = [3,6,7,7,0]
+Output: -1
 
 Constraints:
-1 <= n <= 231 - 1
+1 <= nums.length <= 100
+0 <= nums[i] <= 1000
 
 
 
 
-Kth Missing Positive Number
-Given an array arr of positive integers sorted in a strictly increasing order, and an integer k.
-Return the kth positive integer that is missing from this array.
+Cutting Ribbons
+You are given an array ribbons where ribbons[i] represents the length of the i-th ribbon. You are also given an integer k.
+Your task is to determine the maximum integer length L such that you can cut at least k ribbons of length L from the given ribbons.
+- You may cut each ribbon into multiple smaller ribbons of length L.
+- You may discard leftover pieces that are shorter than L.
+- You cannot join ribbons together.
+If it is not possible to cut at least k ribbons of any positive length, return 0.
 
-Example 1:
-Input: arr = [2,3,4,7,11], k = 5
-Output: 9
-Explanation: The missing positive integers are [1,5,6,8,9,10,12,13,...]. The 5th missing positive integer is 9.
-Example 2:
-Input: arr = [1,2,3,4], k = 2
-Output: 6
-Explanation: The missing positive integers are [5,6,7,...]. The 2nd missing positive integer is 6.
+Example 1
+Input: ribbons = [9,7,5] , k = 3
+Output: 5
+Explanation:
+- Cut ribbon 9 → [5,4] → one ribbon of length 5.
+- Cut ribbon 7 → [5,2] → one ribbon of length 5.
+- Cut ribbon 5 → [5] → one ribbon of length 5.
+Total = 3 ribbons of length 5.
+Example 2
+Input: ribbons = [7,5,9], k = 4
+Output: 4
+Explanation:
+- Cut ribbon 7 → [4,3] → one ribbon of length 4.
+- Cut ribbon 5 → [4,1] → one ribbon of length 4.
+- Cut ribbon 9 → [4,4,1] → two ribbons of length 4.
+Total = 4 ribbons of length 4.
+Example 3
+Input: ribbons = [5,5,5], k = 4
+Output: 2
 
-Constraints:
-1 <= arr.length <= 1000
-1 <= arr[i] <= 1000
-1 <= k <= 1000
-arr[i] < arr[j] for 1 <= i < j <= arr.length
-
-
-
-
-
-
-
-
-
-
-
-
-generics>> CRUD, 
-Array problems in loop
-Array problems in recursion
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  1. Fixed Deposit (FD)
- 
-Maturity = Principal * (1 + (Rate / CompoundingFrequency)) ^ (CompoundingFrequency * TimeInYears)
- 
-
-- Principal = initial deposit  
-- Rate = annual interest rate (decimal, e.g. 0.07 for 7%)  
-- CompoundingFrequency = number of times interest is compounded per year (quarterly = 4, yearly = 1, monthly = 12)  
-- TimeInYears = total duration in years  
-
----
-
-  2. Recurring Deposit (RD)
- 
-Maturity = Installment * (( (1 + (Rate / CompoundingFrequency)) ^ (CompoundingFrequency * TimeInYears) - 1 ) / (1 - (1 + (Rate / CompoundingFrequency)) ^ (-CompoundingFrequency / 12)))
- 
-
-- Installment = monthly deposit  
-- Rate = annual interest rate (decimal)  
-- CompoundingFrequency = usually 4 (quarterly)  
-- TimeInYears = total duration in years  
-
----
-
-  3. Systematic Investment Plan (SIP)
- 
-Maturity = Installment * ( ((1 + MonthlyRate) ^ TotalMonths - 1) / MonthlyRate ) * (1 + MonthlyRate)
- 
-
-- Installment = monthly investment  
-- MonthlyRate = annual rate / 12 (decimal)  
-- TotalMonths = number of months  
-
----
-
-4. Systematic Withdrawal Plan (SWP)
-
-InitialInvestment = Withdrawal * ( (1 - (1 + MonthlyRate) ^ (-TotalMonths)) / MonthlyRate )
-
-
-- Withdrawal = fixed withdrawal per month  
-- MonthlyRate = annual rate / 12 (decimal)  
-- TotalMonths = number of months  
+Constraints
+- 1 <= ribbons.length <= 10^5
+- 1 <= ribbons[i] <= 10^5
+- 1 <= k <= 10^9
